@@ -16,7 +16,7 @@
 	}
 
 	.feature-swiper-pagination li {
-		@apply rounded-full bg-white h-[10px] w-[10px] mx-[6px] md:h-[13px] md:w-[13x] md:mx-[10px];
+		@apply rounded-full bg-white h-[10px] w-[10px] mx-[6px] md:h-[14px] md:w-[14px] md:mx-[10px];
 	}
 
 	.feature-swiper-active {
@@ -25,35 +25,35 @@
 	}
 
 	.feature-swiper-pagination .feature-swiper-active {
-		height: 22px;
-		width: 20px;
+		@apply h-[22px] w-5 md:h-[30px] md:w-[28px];
 	}
 
 	.feature-swiper li {
-		transition: all 1s linear;
+		transition: all 0.2s linear;
 		/* @apply absolute w-[230px] h-[390px] scale-[0.8] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2  border-2 border-white/60; */
-		@apply absolute left-0 w-[230px] h-[390px] scale-[0.8] border-2 border-white/60;
+		@apply absolute left-0 w-[230px] h-[390px] md:w-[316px] md:h-[536px] lg:w-[691px] lg:h-[421px] scale-[0.8] border-2 border-white/60;
 	}
 
 	.feature-swiper-slide-active {
 		/* @apply bg-size-full !z-10 !scale-100 bg-[url('../assets/images/swiper-bg-small.png')] lg:bg-[url('../assets/images/swiper-bg-large.png')] px-[9px] pt-[5px] pb-[10px]; */
-		@apply bg-size-full z-10 !scale-100 bg-[url('../assets/images/swiper-bg-small.png')] lg:bg-[url('../assets/images/swiper-bg-large.png')] px-[9px] pt-[5px] pb-[10px];
+		@apply bg-size-full z-10 !scale-100 bg-[url('../assets/images/swiper-bg-small.png')] lg:bg-[url('../assets/images/swiper-bg-large.png')] px-[9px] pt-[5px] pb-[10px] md:px-3 md:pt-[6px] md:pb-[13px] md:px-[15px] md:pt-2 md:pb-[14px] !border-0;
 	}
 
 	.feature-swiper-next {
 		/* @apply !left-auto !translate-x-0 !-translate-y-1/2 !-right-20 !top-1/2; */
-		@apply !left-20 scale-[0.8] z-[0];
+		@apply !left-20 md:!left-28 lg:!left-44 scale-[0.8] z-[0];
 	}
 
 	.feature-swiper-prev {
 		/* @apply !-translate-y-1/2 !translate-x-0 !-left-20 !top-1/2; */
-		@apply !-left-20 scale-[0.8] z-[0];
+		@apply !-left-20 md:!-left-28 lg:!-left-44 scale-[0.8] z-[0];
 	}
 
 	.feature-swiper-slide-not-active {
 		visibility: hidden;
 	}
 
+	.feature-swiper-slide-active img,
 	.feature-swiper-prev img,
 	.feature-swiper-next img,
 	.feature-swiper-slide-not-active img {
