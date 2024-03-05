@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import FeatureSwiper from "../components/featureSwiper/featureSwiper";
+import ArticleBoard from "../components/articleBoard/articleBoard";
 
 export default function Home() {
 	const swiperRef = useRef<SwiperClass>();
@@ -45,8 +46,63 @@ export default function Home() {
 						</div>
 					</main>
 				</SwiperSlide>
-				<SwiperSlide className="bg-orange-500">
-					<main className="h-full bg-center bg-cover bg-[url('../assets/images/bg-news-small.jpg')] lg:bg-[url('../assets/images/bg-news-large.jpg')]"></main>
+				<SwiperSlide>
+					<main className="relative flex flex-col items-center justify-center h-full bg-center bg-cover bg-[url('../assets/images/bg-news-small.jpg')] lg:bg-[url('../assets/images/bg-news-large.jpg')]">
+						<div className="relative w-[335px] h-[568px] md:w-[460px] md:h-[781px] mt-6 bg-size-full bg-[url('../assets/images/news-board.png')]">
+							<div>
+								<Swiper
+									pagination={true}
+									modules={[Pagination]}
+									loop={true}
+									autoplay={{
+										delay: 2000,
+									}}
+									className="article-swiper-container"
+								>
+									<SwiperSlide>
+										<div className="w-[280px] h-[158px] md:w-[385px] md:h-[217px] rounded-2xl overflow-hidden">
+											<Image
+												src={require("@/assets/images/article-img-1.webp")}
+												alt="article image"
+												className="object-cover"
+											/>
+										</div>
+									</SwiperSlide>
+									<SwiperSlide>
+										<div className="w-[280px] h-[158px] md:w-[385px] md:h-[217px] rounded-2xl overflow-hidden">
+											<Image
+												src={require("@/assets/images/article-img-2.webp")}
+												alt="article image"
+												className="object-cover"
+											/>
+										</div>
+									</SwiperSlide>
+									<SwiperSlide>
+										<div className="w-[280px] h-[158px] md:w-[385px] md:h-[217px] rounded-2xl overflow-hidden">
+											<Image
+												src={require("@/assets/images/article-img-3.webp")}
+												alt="article image"
+												className="object-cover"
+											/>
+										</div>
+									</SwiperSlide>
+									<SwiperSlide>
+										<div className="w-[280px] h-[158px] md:w-[385px] md:h-[217px] rounded-2xl overflow-hidden">
+											<Image
+												src={require("@/assets/images/article-img-4.webp")}
+												alt="article image"
+												className="object-cover"
+											/>
+										</div>
+									</SwiperSlide>
+								</Swiper>
+							</div>
+
+							<ArticleBoard />
+
+							<span className="absolute scale-50 w-[326px] h-[344px] bottom-[-136px] left-[-180px] md:w-[448px] md:h-[473px] md:bg-no-repeat md:bg-cover md:bottom-[-180px] md:left-[-250px] bg-[url('../assets/images/grass.png')]"></span>
+						</div>
+					</main>
 				</SwiperSlide>
 				<SwiperSlide className="bg-green-200">
 					<main className="h-full bg-center bg-cover bg-[url('../assets/images/bg-news-small.jpg')] lg:bg-[url('../assets/images/bg-news-large.jpg')]"></main>
