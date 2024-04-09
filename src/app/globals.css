@@ -74,7 +74,7 @@
 	}
 
 	.article-swiper-container {
-		@apply mt-[60px] !ml-7 w-[280px] h-[183px] md:w-[385px] md:h-[250px] md:mt-[82.5px] md:!ml-[38.5px];
+		@apply mt-[60px] !ml-7 w-[280px] h-[183px] md:w-[385px] md:h-[250px] md:mt-[82.5px] md:!ml-[38.5px] lg:w-[458px] lg:h-[316px] lg:mt-[121px] lg:!ml-[62.5px];
 	}
 
 	.article-swiper-container .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {

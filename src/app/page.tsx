@@ -48,7 +48,7 @@ export default function Home() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<main className="relative flex flex-col items-center justify-center h-full bg-center bg-cover bg-[url('../assets/images/bg-news-small.jpg')] lg:bg-[url('../assets/images/bg-news-large.jpg')]">
-						<div className="relative w-[335px] h-[568px] md:w-[460px] md:h-[781px] mt-6 bg-size-full bg-[url('../assets/images/news-board.png')]">
+						<div className="relative lg:flex w-[335px] h-[568px] md:w-[460px] md:h-[781px] lg:w-[1000px] lg:h-[504px] mt-6 bg-size-full bg-[url('../assets/images/news-board.png')] lg:bg-[url('../assets/images/news-board-lg.png')]">
 							<div>
 								<Swiper
 									pagination={true}
@@ -60,38 +60,38 @@ export default function Home() {
 									className="article-swiper-container"
 								>
 									<SwiperSlide>
-										<div className="w-[280px] h-[158px] md:w-[385px] md:h-[217px] rounded-2xl overflow-hidden">
+										<div className="w-[280px] h-[158px] md:w-[385px] md:h-[217px] lg:w-[458px] lg:h-[275px] rounded-2xl overflow-hidden">
 											<Image
 												src={require("@/assets/images/article-img-1.webp")}
 												alt="article image"
-												className="object-cover"
+												className="object-cover lg:h-full"
 											/>
 										</div>
 									</SwiperSlide>
 									<SwiperSlide>
-										<div className="w-[280px] h-[158px] md:w-[385px] md:h-[217px] rounded-2xl overflow-hidden">
+										<div className="w-[280px] h-[158px] md:w-[385px] md:h-[217px] lg:w-[458px] lg:h-[275px] rounded-2xl overflow-hidden">
 											<Image
 												src={require("@/assets/images/article-img-2.webp")}
 												alt="article image"
-												className="object-cover"
+												className="object-cover lg:h-full"
 											/>
 										</div>
 									</SwiperSlide>
 									<SwiperSlide>
-										<div className="w-[280px] h-[158px] md:w-[385px] md:h-[217px] rounded-2xl overflow-hidden">
+										<div className="w-[280px] h-[158px] md:w-[385px] md:h-[217px] lg:w-[458px] lg:h-[275px] rounded-2xl overflow-hidden">
 											<Image
 												src={require("@/assets/images/article-img-3.webp")}
 												alt="article image"
-												className="object-cover"
+												className="object-cover lg:h-full"
 											/>
 										</div>
 									</SwiperSlide>
 									<SwiperSlide>
-										<div className="w-[280px] h-[158px] md:w-[385px] md:h-[217px] rounded-2xl overflow-hidden">
+										<div className="w-[280px] h-[158px] md:w-[385px] md:h-[217px] lg:w-[458px] lg:h-[275px] rounded-2xl overflow-hidden">
 											<Image
 												src={require("@/assets/images/article-img-4.webp")}
 												alt="article image"
-												className="object-cover"
+												className="object-cover lg:h-full"
 											/>
 										</div>
 									</SwiperSlide>
@@ -100,7 +100,7 @@ export default function Home() {
 
 							<ArticleBoard />
 
-							<span className="absolute scale-50 w-[326px] h-[344px] bottom-[-136px] left-[-180px] md:w-[448px] md:h-[473px] md:bg-no-repeat md:bg-cover md:bottom-[-180px] md:left-[-250px] bg-[url('../assets/images/grass.png')]"></span>
+							<span className="absolute scale-50 lg:scale-[0.61] w-[326px] h-[344px] bottom-[-136px] left-[-180px] md:w-[448px] md:h-[473px] md:bg-no-repeat md:bg-cover md:bottom-[-180px] md:left-[-250px] lg:left-[-280px] lg:bottom-[-200px] bg-[url('../assets/images/grass.png')]"></span>
 						</div>
 					</main>
 				</SwiperSlide>

@@ -5,8 +5,8 @@ type Props = {};
 
 const ArticleBoard = (props: Props) => {
 	return (
-		<div className="px-[30px] md:px-[41px]">
-			<div className="pt-[2px] h-8 w-full md:h-full">
+		<div className="px-[30px] md:px-[41px] lg:px-0 lg:pl-5 lg:pt-[53px] lg:w-[420px]">
+			<div className="pt-[2px] h-8 w-full md:h-full lg:h-fit">
 				<div className="relative px-5 py-[5px] md:px-7 md:py-[7px] md:h-[44px] h-full border-b border-b-[#855628] border-opacity-[0.17]">
 					<div className="absolute w-4 h-[18px] md:w-[22px] md:h-7 bg-size-full left-0 rotate-180 bg-[url('../assets/images/arrow-article-right.png')]"></div>
 					<div className="absolute w-4 h-[18px] md:w-[22px] md:h-7 bg-size-full right-0 bg-[url('../assets/images/arrow-article-right.png')]"></div>
@@ -78,13 +78,14 @@ const ArticleBoard = (props: Props) => {
 			</ul>
 
 			<a href="#">
-				<p className="flex justify-center mt-2 md:mt-[11px]">
+				<p className="flex justify-center mt-2 md:mt-[11px] lg:hidden">
 					<Image
 						src={require("@/assets/images/more-btn.webp")}
 						alt="more button"
 						className="w-[48px] h-[14px] md:w-[66px] md:h-[20px]"
 					/>
 				</p>
+				<p className="text-[#895b2f] text-right pt-2">MORE +</p>
 			</a>
 		</div>
 	);
